@@ -1,3 +1,31 @@
+<?php
+  include('../../controller/authentification.php');
+  if(isset($_POST["submit"])){
+    $email = $_POST["email"] ;
+    $password = $_POST["password"];
+    if(check_empty( $email  , $password )){
+      if(login($email , $password)){
+        $Role = GetRole($email , $password);
+        if($Role == "Admin"){
+          // header('location:./login.php?error');
+        }
+        elseif ($Role = "Secraitaire") {
+          // header('location:./login.php?error');
+        }
+        else{
+          header('location:./UserHomePage.php');
+        }
+      }
+      else{
+        header('location:./login.php?error');
+      }
+    }
+    else{
+      header('location:./login.php?missing');
+    }
+  } 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,14 +49,15 @@
         <h1>TETOUAN<span>SPORT</span></h1>
       </div>
     </div>
-    <form action="" method="post">
+    <form action="" method="POST">
       <h3>login now</h3>
       <?php
-      if (isset($error)) {
-        foreach ($error as $error) {
-          echo '<span class="error-msg">' . $error . '</span>';
-        };
+      if (isset($_GET['missing'])) {
+          echo '<span class="error-msg"> Please Fill All The Blanks </span>';
       };
+      if (isset($_GET['error'])) {
+        echo '<span class="error-msg"> Email Or Password is Incorrect ! </span>';
+    };
       ?>
       <input type="email" name="email" required placeholder="Enter your email">
       <input type="password" name="password" required placeholder="Enter your password">
