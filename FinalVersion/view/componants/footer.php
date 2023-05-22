@@ -18,7 +18,9 @@
         }
     }
 ?>
-<footer>
+<footer id="contact" >
+
+   
     <div class="container11">
     <div class="mydiv">
     <div class="tex">
@@ -33,7 +35,9 @@
                 }
     ?>
       <div class="contact-box">
-            
+      <a class="ToTop" href="#home">
+      <img src="view\assets\images\up-arrow.png">
+   </a>
       <div class="contact-left">
                   <h3 class="sent">SENT YOUR REQUEST</h3>
                   <form method="POST" action="#">
@@ -63,18 +67,15 @@
                      </div>
                      <label>Message</label>
                      <textarea name="message" type="text" rows="5"placeholder="Write your message"></textarea>
-                     <button name="submit"  type="submit">Send</button>
+                     <button class="submit" name="submit"  type="submit">Send</button>
                   </form>
             </div>
       </div>
     </div>
     </div>
-</html>
+   
 </footer>
 
-<!-- <script src="<?= $home; ?>js/bootstrap.bundle.min.js"></script> -->
-</body>
-</html>
 
 
 

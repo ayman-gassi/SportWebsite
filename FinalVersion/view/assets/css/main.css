@@ -21,6 +21,8 @@ header {
 }
 .menu{
     display: flex;
+    justify-content: center;
+    align-items: center;    
     gap: 20px;
 
 
@@ -29,6 +31,7 @@ header {
     color: black;
     display: flex;
 }
+
 a{
     text-decoration: none;
     color: white;
@@ -45,11 +48,22 @@ a{
 
 
 }
-
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#f9a826;
+  }
 
 .menu a:hover{
    color: orange;
-   border-bottom: 2px solid #e25e2e;
+  
 }
 .btn{
    
@@ -438,7 +452,7 @@ label{
     display: block;
     color: black;
 }
-button{
+.submit{
     background: #eca426;
     width: 100px;
     border: none;
@@ -450,10 +464,26 @@ button{
     box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
     transition: 0.7s;
 }
-button:hover{
+.submit:hover{
     cursor: pointer;
     background-color: #edb723;
     transform: scale(1.09);
+}
+.login{
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    background-color: orange;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: rgb(230, 228, 228);
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+    transition: 0.7s;
+}
+.login:hover{
+    
+    background: #eca426;
 }
 .contact-right h3{
     font-weight: 600;
@@ -464,4 +494,12 @@ tr td:first-child{
 }
 tr td{
     padding-top: 20px;
+}
+.ToTop {
+    position: absolute;
+    right: 5%;
+    margin-top: 27%;
+}
+.ToTop img{
+    width: 50px;
 }

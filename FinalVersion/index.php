@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="view/assets/css/main.css">
+    <link rel="stylesheet" href="view/assets/css/form.css">
     <title>Document</title>
 </head>
 <body>
   <?php
     include("view/componants/header.php");
   ?>
-<div class="slideshow-container" id="home">
+<div class="slideshow-container" >
 
 <!-- Full-width images with number and caption text -->
 <div class="mySlides fade">
@@ -68,6 +69,7 @@
 </div>
 
 
+
   
 
 
@@ -113,4 +115,5 @@
 <?php
     include("view/componants/footer.php");
   ?>
+  <!-- <script src="<?= $home; ?>js/bootstrap.bundle.min.js"></script> -->
 </html>

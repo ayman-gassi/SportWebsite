@@ -1,38 +1,19 @@
 
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?= $home; ?>css/main.css">
-    <link rel="stylesheet" href="<?= $home; ?>css/form.css">
-    <title>TETOUAN SPORT</title>
-
-
-    <!-- Bootstrap -->
-    <!-- <link href="<?= $home; ?>css/bootstrap.min.css" rel="stylesheet"> -->
-
-    
-   
-</head>
-
-<body>
-    <header class="container">
+    <header id="home" class="container">
         
             <div class="logo">
                 <h1>TETOUAN<span>SPORT</span></h1>
             </div>
             <div class="menu">
-            <a href="<?= $home; ?>index.php">Accueil</a>
-            <a href="<?= $home; ?>pages/Reservation.php">Sports</a>
+            <a href="#home">Accueil</a>
+            <a href="#sports">Sports</a>
             <a href="#about">A propos</a>
-            <a href="">promotions</a>
             <a href="#contact">contact</a>
-
+            <a href="./view/pages/login.php"><button class="login"  >Login</button></a> 
              </div>
+          
+              
+           
 
         
     </header>
