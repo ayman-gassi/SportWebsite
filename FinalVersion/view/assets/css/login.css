@@ -180,8 +180,17 @@ body {
 .form-container form .error-msg {
     margin: 10px 0;
     display: block;
-    background: crimson;
-    color: #fff;
+    background: #FFF3CD;
+    color: lightcoral;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+.form-container form .done-msg {
+    margin: 10px 0;
+    display: block;
+    background: lightgreen;
+    color: white;
     border-radius: 5px;
     font-size: 20px;
     padding: 10px;
