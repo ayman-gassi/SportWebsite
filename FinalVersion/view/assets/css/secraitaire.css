@@ -1,0 +1,133 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+header {
+    background-color: white;
+    width: 100%;
+    /*position: fixed;*/
+    z-index: 999;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px ;
+    height: 70px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 20px;
+}
+.container a{
+    color: black;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+.logo{
+    color: black;
+    margin-left: 0;
+    margin-right: 2px;
+
+}
+.logo span{
+    color:orange;
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+.menu a:hover{
+    color: orange;
+}
+.menu .btn{
+    padding: 0.5rem 1.5rem;
+    margin: 0 4px;
+    background-color: orange;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 30px;
+    color: white;
+}
+.cnx{
+    display: flex;
+    justify-content: space-between;
+}
+.btn:hover{
+    background-color: #ffab51;  
+    color: rgba(255, 255, 255, 0.749);
+}
+
+
+/* Invitations */
+
+.container1 {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#secraitaire {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.invitation {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.accept {
+    background-color: #6fee73;
+    color: #fff;
+}
+
+.decline {
+    background-color: #dc564c;
+    color: #fff;
+}
+/* Sport  */
+.ensemble{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+.containersport{
+    margin: 9px;
+    border: black 1px solid ;
+    width: 300px;
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
