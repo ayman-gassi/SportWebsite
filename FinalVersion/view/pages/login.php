@@ -1,12 +1,14 @@
 <?php
 include('../../controller/authentification.php');
+session_start();
 if (isset($_POST["submit"])) {
   $email = $_POST["email"];
   $password = $_POST["password"];
   if (check_empty($email, $password)) {
     if (login($email, $password)) {
       $Role = GetRole($email, $password);
-
+      $_SESSION['email'] = $email; 
+      $_SESSION['role'] = $Role; 
       if ($Role == "USER") {
         header('location:./UserHomePage.php');
       } elseif ($Role = "Secraitaire") {
